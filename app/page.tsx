@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Send, Image as ImageIcon } from 'lucide-react';
 
 export default function Home() {
-  const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState<Array<{role: string, content: any}>>([
     {
       role: 'assistant',
       content: 'Welcome! I\'m here to help review creative materials and provide feedback on videos, designs, copy, and media strategy based on Tennis Channel brand standards. What would you like me to look at today?'
